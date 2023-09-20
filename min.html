@@ -2,9 +2,43 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Min</title>
+        <title>When I was seeing Michael Scribner</title>
+        <script>
+            function init () {
+                var loc = window.location.href;
+                var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+                var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' + 
+                loc + '?profile=css3';
+                document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+                document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+            }
+            window.onload = init;
+        </script>
     </head>
     <body>
-        <h1>Min</h1>
+        <h1>Michael Scribner</h1>
+        <p>
+            The history of me seeing Michael Scribner.
+        </p>
+        <h2>September 8th, 2009</h2>
+        <p>
+            The first day I saw him: First day of pre-K, In class together
+        </p>
+        <h2>September 7th, 2010</h2>
+        <p>
+            First day of kindergarten: At the same school, In different classes
+        </p>
+        <h2>2011-2016</h2>
+        <p>
+            Cub Scouts: Pack 2473, Den 12
+        </p>
+        <h2>February 20th, 2016</h2>
+        <p>
+            The last day I saw him: Blue & Gold banquet, Crossed into Boy Scouts
+        </p>
+        <footer>
+            <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+            <a id="vLink2"><strong> CSS </strong> Valid! </a>
+        </footer>
     </body>
 </html>
