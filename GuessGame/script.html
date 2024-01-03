@@ -1,13 +1,19 @@
-<script>
-    var guessInput = document.getElementById("guess");
-    var guess = guessInput.value;
-    var answer = null;
-    var answers = [ "red", "green", "bule"];
-    var index = Math.floor(Math.random() * answers.length);
-    if (guess == answers[index]) {
-        answer = "You're right! I was thinking of " + answers[index];
-    } else {
-        answer = "Sorry, I was thinking of " + answers[index];
-    }
-    alert(answer);
-</script>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Guess Game</title>
+    </head>
+    <script>
+        var guessInput = document.getElementById("guess");
+        var guess = guessInput.value;
+        var answer = null;
+        var answers = [ "red", "green", "bule"];
+        var index = Math.floor(Math.random() * answers.length);
+        if (guess == answers[index]) {
+            answer = "You're right! I was thinking of " + answers[index];
+        } else {
+            answer = "Sorry, I was thinking of " + answers[index];
+        }
+        alert(answer);
+    </script>
+</html>
