@@ -13,10 +13,10 @@
             getNextShowing: function(movie) {
                 var now = new Date().getTime();
     
-                for (var i = 0; i < movie.showtimes.length; i++) {
-                    var showtime = getTimeFromString(movie.showtimes[i]);
+                for (var i = 0; i < this.showtimes.length; i++) {
+                    var showtime = getTimeFromString(this.showtimes[i]);
                     if ((showtime - now) > 0) {
-                        return "Next showing of " + movie.title + " is " + movie.showtimes[i];
+                        return "Next showing of " + this.title + " is " + this.showtimes[i];
                     }
                 }
                 return null;
@@ -31,10 +31,10 @@
             getNextShowing: function(movie) {
                 var now = new Date().getTime();
     
-                for (var i = 0; i < movie.showtimes.length; i++) {
-                    var showtime = getTimeFromString(movie.showtimes[i]);
+                for (var i = 0; i < this.showtimes.length; i++) {
+                    var showtime = getTimeFromString(this.showtimes[i]);
                     if ((showtime - now) > 0) {
-                         return "Next showing of " + movie.title + " is " + movie.showtimes[i];
+                         return "Next showing of " + this.title + " is " + this.showtimes[i];
                     }
                 }
                 return null;
