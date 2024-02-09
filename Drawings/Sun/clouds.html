@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Drawings & Animations</title>
+        <script>
+            function init () {
+                var loc = window.location.href;
+                var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+                var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' + 
+                loc + '?profile=css3';
+                document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+                document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+            }
+            window.onload = init;
+        </script>
+        noStroke();
+        var leftX = 120;
+        var rightX = 290;
+        var sunRadius = 100;
+        
+        draw = function() {
+            background(184, 236, 255);
+            
+            fill(255, 170, 0);
+            ellipse(200, 100, sunRadius, sunRadius);
+            
+            // clouds 
+            fill(255, 255, 255);
+            // left cloud
+            ellipse(leftX, 150, 126, 97);
+            ellipse(leftX+62, 150, 70, 60);
+            ellipse(leftX-62, 150, 70, 60);
+            
+            // right cloud
+            ellipse(rightX, 100, 126, 97);
+            ellipse(rightX+62, 100, 70, 60);
+            ellipse(rightX-62, 100, 70, 60);
+            leftX -= 1;
+            rightX += 1;
+            sunRadius += 2;
+        };
+    </body>
+</html>
